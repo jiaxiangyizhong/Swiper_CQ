@@ -18,6 +18,7 @@ def random_code(length=6):
 
 def send_vcode(phonenum):
     '给用户发送短信验证码'
+    #验证手机号
     if not is_phonenum(phonenum):
         return False
 
@@ -33,5 +34,5 @@ def send_vcode(phonenum):
 
     return send_sms(phonenum,vcode)  #向用户手机发送验证码
 
-    #
+
 

@@ -5,7 +5,7 @@ from hashlib import md5
 import requests
 from Swiper_CQ import config as cfg
 
-def sms():
+def send_sms(phonenum,vcode):
     appid = cfg.appid
     appkey = cfg.appkey
 

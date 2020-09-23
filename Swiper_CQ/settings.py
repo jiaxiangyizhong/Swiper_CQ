@@ -44,10 +44,11 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'common.middleware.AuthMiddleware'
 ]
 
 ROOT_URLCONF = 'Swiper_CQ.urls'
@@ -76,8 +77,8 @@ WSGI_APPLICATION = 'Swiper_CQ.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'CQ',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'swiper',
 		'HOST':'121.42.229.231',
 		'PASSWORD':'HBK190601hbk*2',
 		'USER':'root'
