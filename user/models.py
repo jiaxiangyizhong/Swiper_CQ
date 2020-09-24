@@ -30,3 +30,15 @@ class User(models.Model):
             'avatar':self.avatar,
             'location':self.location
         }
+
+
+class Profile(models.Model):
+    dating_location= '⽬标城市'
+    dating_gender= '匹配的性别'
+    min_distance= '最⼩查找范围'
+    max_distance= '最⼤查找范围'
+    min_dating_age= '最⼩交友年龄'
+    max_dating_age= '最⼤交友年龄'
+    vibration= '开启震动'
+    only_matched= '不让陌⽣⼈看我的相册'
+    auto_play= '⾃动播放视频'
